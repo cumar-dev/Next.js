@@ -1,4 +1,5 @@
 import Counter from "./Components/Counter";
+import Form from "./Form/Form";
 
 export default async function ProductsPage() {
   const res = await fetch("https://dummyjson.com/products");
@@ -7,6 +8,7 @@ export default async function ProductsPage() {
   return (
     <>
     <Counter />
+    <Form />
     <div>
       <h1 className="text-xl font-bold">Products</h1>
       <ul>
