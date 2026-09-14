@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import type { Metadata } from "next";
 import "../../globals.css";
@@ -24,7 +23,7 @@ interface Product {
 
 async function getProduct(slug: string): Promise<Product> {
   const res = await fetch(`https://fakestoreapi.com/products/${slug}`);
-   console.log("jdfhdf",res)
+  console.log("jdfhdf", res);
 
   if (!res.ok) {
     throw new Error("Failed to fetch product");

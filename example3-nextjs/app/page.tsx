@@ -1,5 +1,5 @@
 import Product from "./products/page";
-import productsData from "./caching/Product";
+// import productsData from "./caching/Product";
 export default function Home() {
   return (
     <>
